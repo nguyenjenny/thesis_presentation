@@ -1,0 +1,77 @@
+{% macro get_cols_bg(col_list, width, color) %}
+    <div class="row g-4 justify-content-md-center">
+        {% for col in col_list %}
+        <div class="col-{{width}}">
+            <div class ="container p-3 rounded-3"  style="background-color: {{color}}">
+                <h4>{{ col[0] }}</h4>
+                <p>{{ col[1] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+{% macro get_cols(col_list, width) %}
+    <div class="row g-4 justify-content-md-center">
+        {% for col in col_list %}
+        <div class="col-{{width}}">
+            <div class ="container p-3">
+                <h4>{{ col[0] }}</h4>
+                <p>{{ col[1] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
+
+{% macro get_card(card, card_height) %}
+    {% set card_title = card[0] %}
+    {% set card_image = card[1] %}
+    {% set card_content = card[2] %}
+    <div class="card text-dark">
+        <img src="{{ card_image }}" class="card-img-top" alt="card image" height={{ card_height }}, style='max-width: 100%; max-height: 100%; margin: 0;'>
+        <div class="card-body">
+            <h4 class="card-title text-dark">{{ card_title }}</h5>
+            <p class="card-text text-dark">{{ card_content }}</p>
+        </div>
+    </div>
+
+{% endmacro %}
+
+{% macro get_cards(cards, width, card_height) %}
+    <div class="container mx-auto mt-3">
+        <div class="row justify-content-md-center gy-4">
+            {% for card in cards %}
+                <div class="col-{{width}}">
+                    {{ get_card(card, card_height) }}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}
+
+
+{% macro get_accordion (items, id_name) %}
+<div class="accordion" id="{{ id_name }}">
+    {% for item in items %}
+        {% set accordion_title = item[0] %}
+        {% set accordion_content = item[1] %}
+        {% set accordion_id = id_name ~ '_' ~ loop.index %}
+        {% set heading_accordion_id = 'heading_' ~ id_name ~ '_' ~ loop.index %}
+    <div class="accordion-item">
+        <h2 class="accordion-header reveal" id="{{ heading_accordion_id }}">
+            <button class="accordion-button button-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#{{ accordion_id }}" aria-expanded="true" aria-controls="{{ accordion_id }}">
+                <h2 class="text-dark">{{ accordion_title }}</h2>
+            </button>
+        </h2>
+        <div id="{{ accordion_id }}" class="accordion-collapse collapse" aria-labelledby="{{ heading_accordion_id  }}" data-bs-parent="#{{ id_name }}">
+            <div class="accordion-body text-dark" style="font-size: .78em">
+                <p>{{ accordion_content }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endmacro %}
