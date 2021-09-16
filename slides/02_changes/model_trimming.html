@@ -11,11 +11,11 @@
     <div class="container" style="text-align: left;">
 
         {% set model_trimming_points = [
-            'Originally we used a <b>model trimming</b> approach where we progressively tweaked the model by removing factors to iteratively improve the fit.',
+            'Originally, we used a <b>model trimming</b> approach where we progressively tweaked the model by removing factors to iteratively improve the fit.',
             'The <u>chi-squared</u> difference test as well as goodness of fit was used to compare whether our alternative models fit significantly better or worse than our hypothesized models.',
-            'However, when we added our covariates, the significant factors changed dramatically. They lack of stability of the factors as well as the sensitivity to covariates made us decide against using this method.',
+            'However, when we added our covariates, the significant factors changed dramatically. The lack of stability of the factors as well as the sensitivity to covariates made us decide against using this method.',
             'Alternatively, when we progressively removed one factor from the model, we also removed the covariate (e.g., removing language, also removed the correlation between language and IQ)',  
-            'The model trimming approach required testing many alternative models (i.e., 200+ models), which we did not have a large enough sample size for sufficient stastical power after correction for multiple comparisons.',
+            'The model trimming approach required testing many alternative models (i.e., 200+ models).  Our sample size was not large enough, and we did not have sufficient statistical power after accounting for multiple comparisons.',
         ] %}
 
         {{ get_ul(model_trimming_points) }}

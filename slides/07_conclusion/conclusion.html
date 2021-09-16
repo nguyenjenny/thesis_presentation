@@ -1,0 +1,36 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{blue}}">
+    <div class="container py-3">
+        <i class="fa fa-check-circle-o  display-1 fa-3x pb-2" aria-hidden="true"></i>
+        <h1>Conclusion</h1>
+
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            'This work represents a preliminary step in understanding the determinants of social communication difficulties. Ultimately, by understanding the factors that drive and predict social communication, we hope to be able to target specific skills or behaviours and to create personalized interventions for individuals with ASD.',
+            'We put forth a theoretical model based on literature that explains the variability in social communication well; however, it will need to be validated on separate datasets, and alternative models need to be considered.',
+            "Despite this study's limitations, a key takeaway of this work is appreciating the factor sensitivity to different constructs of social communication. Future studies looking to explore determinants of social communication should keep this construct-specific sensitivity in mind and select an appropriate measure that aligns with it.",
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+    {# {% set citations = [
+        "citation1",
+        "citation2",
+        "citation3",
+        "citation1",
+        ]
+        %}
+
+    {{get_citations(citations, "model_trimming_citations")}} #}
+
+
+</section>
