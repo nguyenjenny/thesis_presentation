@@ -1,0 +1,51 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{light_purple}}" >
+<div class="container">
+    <h1 class="py-1">Limitations</h1>
+</div>
+<div class="row g-4 justify-content-md-center">
+    <div class="col-4">
+        <div class ="container p-3">
+            <h4 class="py-1">Use of caregiver-reported questionnaires</h4>
+            {% set points = [
+            "We used caregiver-reported questionnaires (SCQ, CBCL, ABAS) rather than observational clinician measures (ADOS) to assess social communication difficulties --> skewed by caregiver perception",
+            "Future work could include observational measures and self-reported questionnaires.",
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class ="container p-3">
+            <h4 class="py-1">Selection of measures for each factor</h4>
+            {% set points = [
+            "There are limitations based on the measures we chose for each factor.",
+            "For example, CBCL was used as a measure of anxiety and attention, which might account for the strong predictive power use the factors in the CBCL mmodel.",
+            "Another limitation was the use of total scores (for anxiety, attetnion, sensory profile). More granularity might help us further distinguish differences between measures.",
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+    <div class="col-4">
+        <div class ="container p-3">
+            <h4 class="py-1">Existence of alternative SEM models</h4>
+            {% set points = [
+            "The choice to analyze data from a non-experimental design using SEM also has limitations.",
+            "We only tested on a theoretical model, but multiple alternative models may exist and better explain the variance in social communication scores.",
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+
+
+
+</div>
+
+</section>
