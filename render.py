@@ -68,13 +68,29 @@ image_vars = {
     "labels_img": "assets/images/Labels.svg", 
     "distill_img": "assets/images/Distill.svg", 
 
+    # SEM
+    "sem_scq_combined_img": "assets/sem/SCQ_Combined.svg",
+    "sem_abas_combined_img": "assets/sem/ABAS_Combined.svg",  
+    "sem_cbcl_combined_img": "assets/sem/CBCL_Combined.svg",
+    "multigroup_plot": "assets/sem/multigroup_plot.html",
+
+
 
 
     # "_img": "assets/images/.svg", 
 }
 
+table_vars = {
+    "par_char_table": "assets/tables/participant_char_table.htm",
+    "ttest_table": "assets/tables/ttest_table.htm",
+    "pcorr_table": "assets/tables/pcorr_table.htm",
+    "fit_table": "assets/tables/fit_table.png",
 
-jinja_vars = {**general_vars, **color_vars, **home_vars, **image_vars}
+    # "_table": "assets/tables/_table.htm",
+}
+
+
+jinja_vars = {**general_vars, **color_vars, **home_vars, **image_vars, **table_vars}
 
 
 html_str = template.render(jinja_vars)
