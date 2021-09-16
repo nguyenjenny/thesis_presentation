@@ -1,0 +1,26 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+
+<section data-background-color="{{white}}" >
+    <div class="container py-1">
+        <h1>Theoretical Model</h1>
+    </div>
+
+    <img src="{{path_model_img}}" width=70% />
+
+    {% set citations = [
+    "citation1",
+    "citation2",
+    "citation3",
+    "citation1",
+    "citation2",
+    "citation3",
+    "citation1",
+    "citation2",
+    ]
+    %}
+
+    {{get_citations(citations, "factor_model_citations")}}
+
+</section>

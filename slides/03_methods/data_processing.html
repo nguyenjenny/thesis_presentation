@@ -1,0 +1,41 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{data_processing_color}}" >
+
+<div class="row g-4 justify-content-md-center">
+    <div class="col-8">
+        <div class ="container p-3">
+            <img class="image-flex" src="{{ data_cleaning_img }}" height=100>
+            <h4 class="py-1">Data Cleaning</h4>
+
+
+            {% set data_cleaning_points = [
+            "Duplicate participants (e.g., from longitudinal studies) were removed",
+            "A <b>pairwise deletion approach</b>, where a participant is only removed when the particular data point to test an assumption is missing,
+             was chosen to maximize statistical power given our multifactor hypotheses.",
+            "Depending on the hypotheses and statistical test, <b>sample size varied</b> and was reported per analytical test.",
+            ] %}
+
+            {{ get_ul(data_cleaning_points) }}
+        </div>
+    </div>
+
+
+    <div class="col-4">
+        <div class ="container p-3">
+            <img class="image-flex" src="{{ dat_viz_img }}" height=100>
+            <h4 class="py-1">Data Visualization</h4>
+            {% set viz_points = [
+            "Data was visualized while cleaning and processing data to help spot issues with the data",
+            ] %}
+
+            {{ get_ul(viz_points) }}
+        </div>
+    </div>
+
+
+
+</div>
+
+</section>

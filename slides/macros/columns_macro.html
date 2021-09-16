@@ -24,6 +24,20 @@
     </div>
 {% endmacro %}
 
+{% macro get_cols_images(col_list, width, img_height) %}
+    <div class="row g-4 justify-content-md-center">
+        {% for col in col_list %}
+        <div class="col-{{width}}">
+            <div class ="container p-3">
+                <img class="image-flex" src="{{ col[2] }}" height={{ img_height }}>
+                <h4>{{ col[0] }}</h4>
+                <p>{{ col[1] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% endmacro %}
+
 
 {% macro get_card(card, card_height) %}
     {% set card_title = card[0] %}

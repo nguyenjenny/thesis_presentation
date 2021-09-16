@@ -25,9 +25,71 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				{% include 'title_cards/home.html' %}
+				<!--  Home Page -->
+				{% include '00_title_cards/home.html' %}
+
+				<!--  Intro -->
 				<section>
-					{% include 'title_cards/template.html' %}
+					{% include '00_title_cards/intro.html' %}
+					{% include '01_intro/background.html' %}
+					{% include '01_intro/factors.html' %}
+					{% include '01_intro/gaps_in_lit.html' %}
+					{% include '01_intro/objectives.html' %}
+					{% include '01_intro/factor_model.html'%}
+					{% include '01_intro/12_sem_models.html'%}
+					
+				</section>
+
+				<!--  Changes -->
+				<section>
+					{% include '00_title_cards/changes.html' %}
+					{% include '02_changes/model_trimming.html'%}
+					{% include '02_changes/confirmatory_approach.html'%}
+				</section>
+
+				<!--  Methods -->
+				<section>
+					{% include '00_title_cards/methods.html' %}
+					{% include '03_methods/participants.html' %}
+					{% include '03_methods/measures.html' %}
+					{% include '03_methods/methods_overview.html' %}
+					{% include '03_methods/data_processing_title.html' %}
+					{% include '03_methods/data_processing.html' %}
+					{% include '03_methods/pcorr_title.html' %}
+					{% include '03_methods/pcorr.html' %}
+					{% include '03_methods/sem_title.html' %}
+					{% include '03_methods/sem_analysis.html' %}
+					{% include '03_methods/sem_multigroup_distill.html' %}
+					{% include '01_intro/12_sem_models.html'%}
+				</section>
+
+
+				<!--  Results -->
+				<section>
+					{% include '00_title_cards/results.html' %}
+				</section>
+
+				<!--  Discussion -->
+				<section>
+					{% include '00_title_cards/discussion.html' %}
+				</section>
+
+
+				<!--  Limitations -->
+				<section>
+					{% include '00_title_cards/limitations.html' %}
+				</section>
+
+
+				<!--  Conclusions -->
+
+				<section>
+					{% include '00_title_cards/conclusion.html' %}
+				</section>
+
+				<!--  Templates -->
+				<section>
+					{% include '00_title_cards/template.html' %}
 					{% include 'templates/list_groups.html' %}
 					{% include 'templates/lists.html' %}
 					{% include 'templates/three_col.html' %}
@@ -38,17 +100,10 @@
 					{% include 'templates/accordion.html' %}
 					{% include 'templates/citation.html' %}
 
-				</section>
-				<section>
-					{% include 'title_cards/intro.html' %}
-				</section>
-				<section>
-					{% include 'title_cards/results.html' %}
-				</section>
-				<section>
-					{% include 'title_cards/conclusion.html' %}
-				</section>
-				{% include 'title_cards/end.html' %}
+				</section> 
+
+				<!--  End Page -->
+				{% include '00_title_cards/end.html' %}
 			</div>
 			<section>
 

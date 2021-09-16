@@ -1,0 +1,31 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{purple}}">
+    <div class="container py-3">
+        <i class="fa fa-comments display-1 fa-3x pb-3" aria-hidden="true"></i>
+        <h3>Social communication difficulties in Autism Spectrum Disorder (ASD)</h3>
+    </div>
+
+    {% set list_1 = [
+        'Social communication difficulties are a core diagnostic domain of ASD.',
+        'These difficulties can negatively impact academic, mental health, employment, and quality of life outcomes for children and youth with ASD',
+        'There is an emerging body of literature identifying several such factors including demographic factors (sex, race/ethnicity, and socioeconomic status), IQ, sensory processing, attention, language, and repetitive, restrictive behaviours.',
+
+    
+    ] %}
+    
+    {{ get_ul(list_1) }} 
+
+
+    
+    {% set citations = [
+    "citation1",
+    "citation2",
+    "citation3",
+    ]
+    %}
+
+    {{get_citations(citations, "background_citations")}}
+
+</section>

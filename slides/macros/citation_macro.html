@@ -1,7 +1,7 @@
 {% macro get_citations(items, citation_group_name) %}
 <div class='container'>
     <p style="font-size: 0.78rem">
-        Citations:
+        {# References: #}
         {% for item in items%}
         {% set ref_id = citation_group_name ~ '_' ~ loop.index %}
         <sup id="fnref:{{ ref_id }}">

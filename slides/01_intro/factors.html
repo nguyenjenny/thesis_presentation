@@ -1,0 +1,26 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+
+<section data-background-color="{{baby_blue}}" >
+    <div class="container">
+        <h3>Determinants of Social Communication</h3>
+    </div>
+
+    <img src="{{factor_img}}" width=60% />
+
+    {% set citations = [
+    "citation1",
+    "citation2",
+    "citation3",
+    "citation1",
+    "citation2",
+    "citation3",
+    "citation1",
+    "citation2",
+    ]
+    %}
+
+    {{get_citations(citations, "factor_model_citations")}}
+
+</section>

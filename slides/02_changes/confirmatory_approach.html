@@ -1,0 +1,38 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{green}}">
+    <div class="container py-3">
+        <i class="fa fa-compress display-1 fa-3x pb-2" aria-hidden="true"></i>
+        <h1>New SEM Method</h1>
+        <h3>Confirmatory Approach: Model Testing</h3>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set model_trimming_points = [
+            "Instead, we've decided to use a <b>confirmatory approach</b> where we test thee same model for goodness of fit.",
+            'Since we are testing the same model in 4 sample groups and using 3 measures of social communication, we are running a total of 12 model. Thus, the number of comparisons is more line with our sample size.',
+            'If a model has good fit, we can look at the factors that contribute significantly to our model to form a conclusion.',
+            'In our model, instead of using a composite score for social communication, we have separated them into separate variables. 
+            This is more in line with literature, as factors such as language can be differentially associated with social and communication difficulties.',
+        ] %}
+
+        {{ get_ul(model_trimming_points) }}
+
+        
+
+    </div>
+
+    {# {% set citations = [
+        "citation1",
+        "citation2",
+        "citation3",
+        "citation1",
+        ]
+        %}
+
+    {{get_citations(citations, "model_trimming_citations")}} #}
+
+
+</section>
