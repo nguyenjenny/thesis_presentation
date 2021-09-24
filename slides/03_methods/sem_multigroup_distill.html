@@ -5,7 +5,7 @@
 
 <div class="row g-4 justify-content-md-center">
 
-    <div class="col-6">
+    {# <div class="col-6">
         <div class ="container p-3">
             <img class="image-flex" src="{{ labels_img }}" height=100>
             <h4 class="py-1">Multi-group Analysis</h4>
@@ -18,13 +18,13 @@
 
             {{ get_ul(points) }}
         </div>
-    </div>
+    </div> #}
 
 
-    <div class="col-6">
+    <div class="col-8">
         <div class ="container p-3">
             <img class="image-flex" src="{{ distill_img }}" height=100>
-            <h4 class="py-1">Distll Significant Factors</h4>
+            <h4 class="py-1">Distill Significant Factors</h4>
             {% set points = [
             " To evaluate the significance of the parameters within the models, we first controlled for multiplicity when conducting SEM
              using the <b>false discovery rate (FDR)</b> procedure. ",

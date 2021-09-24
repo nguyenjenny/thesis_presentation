@@ -34,6 +34,15 @@ color_vars = {
     "data_processing_color": "#93C8C9",
     "pcorr_color": "#F3A095",
     "sem_color": "#FDCB58",
+
+    # Factor colours
+    "demo_color": "#3F4077",
+    "anx_color": "#47A5A2",
+    "att_color": "#FDB715",
+    "iq_color": "#E77E24",
+    "rrb_color": "#897BB6",
+    "lang_color": "#CE5F57",
+    "sen_color": "#60AD45",
 }
 
 logos = glob.glob(r"assets/images/logos/logo_*.png")

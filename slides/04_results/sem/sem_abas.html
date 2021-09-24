@@ -10,10 +10,18 @@
      <div class="container" style="text-align: left;">
 
         {% set points = [
-            "Both attention and IQ were preditive of adaptive social and communication skills.",
-            "RSMB, but not IS, was a significant parameter for both the social and communcation subscales.",
-            'Language and age were also predictors adaptive communication.',
-            'Sex was a predictor of social adaptive functioning.',
+            "Both 
+            <span style='background-color: #FDB715; color: #fff;'>attention</span> and
+             <span style='background-color: #E77E24; color: #fff;'>IQ</span>
+             were preditive of adaptive social and communication skills.",
+            "<span style='background-color: #897BB6; color: #fff;'>RSMB</span>
+            , but not <span style='background-color: #897BB6; color: #fff;'>IS</span>
+            , was a significant parameter for both the social and communcation subscales.",
+            "<span style='background-color: #CE5F57; color: #fff;'>Language</span>
+             and <span style='background-color: #3F4077; color: #fff;'>age</span>
+             were also predictors adaptive communication.",
+            "<span style='background-color: #3F4077; color: #fff;'>Sex</span>
+             was a predictor of social adaptive functioning.",
         ] %}
 
         {{ get_ul(points) }}

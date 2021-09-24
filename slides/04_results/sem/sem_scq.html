@@ -10,14 +10,21 @@
      <div class="container" style="text-align: left;">
 
         {% set points = [
-            "Unsuprisingly, RRBs and sensory atypicalities
+            "Unsuprisingly, <span style='background-color: #897BB6; color: #fff;'>RRBs</span>
+             and <span style='background-color: #60AD45; color: #fff;'>sensory atypicalities</span>
              were predictive of social and communication symtpoms of ASD.",
-            'Language and age were also predictors of both social and communication subscales.',
-            'Additionally, SES was a predictor of social symptoms,
-             and sex was a predictor of communication symptoms',
+            "<span style='background-color: #CE5F57; color: #fff;'>Language</span> and
+             <span style='background-color: #3F4077; color: #fff;'>age</span>
+              were also predictors of both social and communication subscales.",
+            "Additionally, <span style='background-color: #3F4077; color: #fff;'>SES</span>
+             was a predictor of social symptoms, and
+              <span style='background-color: #3F4077; color: #fff;'>sex</span> and 
+              <span style='background-color: #FDB715; color: #fff;'>attention</span> 
+               was a predictor of communication symptoms",
         ] %}
 
         {{ get_ul(points) }}
+
 
 
     </div>
