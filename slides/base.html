@@ -36,27 +36,19 @@
 					{% include '01_intro/gaps_in_lit.html' %}
 					{% include '01_intro/objectives.html' %}
 					{% include '01_intro/factor_model.html'%}
-					{% include '01_intro/12_sem_models.html'%}
 					
 				</section>
 
-				<!--  Changes -->
-				<section>
-					{% include '00_title_cards/changes.html' %}
-					{% include '02_changes/model_trimming.html'%}
-					{% include '02_changes/confirmatory_approach.html'%}
-				</section>
+				
 
-				<!--  Methods -->
+				<!-- Methods -->
 				<section>
 					{% include '00_title_cards/methods.html' %}
-					{% include '03_methods/participants.html' %}
+					{% include '03_methods/participants.html' %}  
 					{% include '03_methods/measures.html' %}
 					{% include '03_methods/methods_overview.html' %}
 					{% include '03_methods/data_processing_title.html' %}
 					{% include '03_methods/data_processing.html' %}
-					{% include '03_methods/pcorr_title.html' %}
-					{% include '03_methods/pcorr.html' %}
 					{% include '03_methods/sem_title.html' %}
 					{% include '03_methods/sem_analysis.html' %}
 					{% include '03_methods/sem_multigroup_distill.html' %}
@@ -64,48 +56,85 @@
 				</section>
 
 
-				<!--  Results -->
+				<!-- Results -->
 				<section>
 					{% include '00_title_cards/results.html' %}
 					{% include '04_results/par_char_table.html' %}
 
-					{% include '04_results/pcorr/pcorr_title.html' %}
-					{% include '04_results/pcorr/ttest_table.html' %}
-					{% include '04_results/pcorr/pcorr_table.html' %}
+					
 
 					{% include '04_results/sem/sem_title.html' %}
 					{% include '04_results/sem/sem_fit.html' %}
 					{% include '04_results/sem/sem_scq.html' %}
 					{% include '04_results/sem/sem_abas.html' %}
 					{% include '04_results/sem/sem_cbcl.html' %}
+					{% include '04_results/sem/sem_combined.html' %}
 
-					{% include '04_results/multigroup/multigroup_title.html' %}
-					{% include '04_results/multigroup/multigroup.html' %}
+					
 
 
 				</section>
 
-				<!--  Discussion -->
+				<!-- Discussion -->
 				<section>
 					{% include '00_title_cards/discussion.html' %}
-					{% include '05_discussion/pcorr.html' %}
 					{% include '05_discussion/sem.html' %}
+					{% include '05_discussion/implications.html' %}
 				</section>
 
 
-				<!--  Limitations -->
+				<!-- Limitations -->
 				<section>
 					{% include '00_title_cards/limitations.html' %}
 					{% include '06_limitations/limitations.html' %}
 				</section>
 
 
-				<!--  Conclusions -->
+				<!-- Conclusions -->
 
 				<section>
 					{% include '00_title_cards/conclusion.html' %}
 					{% include '07_conclusion/conclusion.html' %}
 				</section>
+
+				<!--  End Page -->
+				<section>
+					{% include '00_title_cards/end.html' %}
+				</section>
+
+				<!-- Appendix -->
+				<section>
+
+					<!-- Changes -->
+					
+						{% include '00_title_cards/changes.html' %}
+						{% include '02_changes/model_trimming.html'%}
+						{% include '02_changes/confirmatory_approach.html'%}
+					
+
+					<!-- Methods -->
+					
+						{% include '03_methods/methods_overview.html' %}
+						{% include '03_methods/data_processing_title.html' %}
+						{% include '03_methods/data_processing.html' %}
+						{% include '03_methods/pcorr_title.html' %}
+						{% include '03_methods/pcorr.html' %} 
+				
+
+			
+						{% include '04_results/pcorr/pcorr_title.html' %}
+						{% include '04_results/pcorr/ttest_table.html' %}
+						{% include '04_results/pcorr/pcorr_table.html' %} 
+
+
+						{% include '04_results/multigroup/multigroup_title.html' %}
+						{% include '04_results/multigroup/multigroup.html' %}
+
+						{% include '05_discussion/pcorr.html' %}
+			
+
+				</section>
+
 
 				{# <!--  Templates -->
 				<section>
@@ -122,12 +151,11 @@
 
 				</section>  #}
 
-				<!--  End Page -->
-				{% include '00_title_cards/end.html' %}
-			</div>
-			<section>
+				
 
-			</section>
+				
+			</div>
+		
 		</div>
 
 		<script src="dist/reveal.js"></script>

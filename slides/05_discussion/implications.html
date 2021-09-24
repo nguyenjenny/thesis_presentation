@@ -1,0 +1,30 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{blue}}" >
+    <div class="container">
+        <i class="fa fa-users display-1 fa-5x " aria-hidden="true"></i>
+        <h1 class="py-1">Practical implications</h1>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Across all three models, multiple factors were associated with social communication differences",
+            'Rather than one common pathway, social communication differences could be a <b>cumulative manifestation of differences in a variety of areas</b>.',
+            'Our results can ultimately lead to the <b>identification of areas where environmental and social supports</b> can be implemented to increase the participation and inclusion of children with ASD. For example:
+            <ul>
+                <li>For individuals where sensory differences impact social communication, identification and supporting sensory triggers may be helpful.</li>
+                <li>In individuals where language ability impacts social communication skills, speech and language supports may be used. </li>
+            </ul>
+            ',
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+    
+</section>

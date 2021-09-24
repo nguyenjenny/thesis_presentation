@@ -1,2 +1,35 @@
-<section data-background-iframe="{{ par_char_table }}" data-background-interactive>
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{white}}">
+    <div class="container py-3">
+        <h1 class="py-1">Participant Characteristics</h1>
+        <img class="image-flex" src="{{ par_char_table }}" width=75%>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "In terms of demographics, the TD group was the oldest, had the greatest caregiver education and household income.",
+            'The ASD group had the most differences in all other factors, with the exception of Attention problems',
+            'As expected, the ASD group has the most social communication differences.',
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+    {# {% set citations = [
+        "citation1",
+        "citation2",
+        "citation3",
+        "citation1",
+        ]
+        %}
+
+    {{get_citations(citations, "model_trimming_citations")}} #}
+
+
 </section>

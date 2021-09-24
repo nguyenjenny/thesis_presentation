@@ -6,9 +6,9 @@ jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader("slides"))
 template = jinja_env.get_template("base.html")
 
 general_vars = {
-    "presentation_date": "2021-09-16",
+    "presentation_date": "2021-09-29",
     "presentation_title": "Investigating the determinants of social communication difficulties in ASD",
-    "subtitle": "Thesis Progress",
+    "subtitle": "Thesis Defense",
     "contact_text": "Contact Me",
     "presentation_width": 1300,
     "presentation_height": 700,
@@ -59,7 +59,7 @@ image_vars = {
     # Method images
     "pond_img": "assets/images/logos/logo_POND.png",
     "measures_img": "assets/images/Measures.svg",
-    "methods_img": "assets/images/Methods.svg", 
+    "methods_img": "assets/images/Methods-03.svg", 
     "data_cleaning_img": "assets/images/DataCleaning.svg", 
     "dat_viz_img": "assets/images/DataViz.svg", 
     "pcorr_img": "assets/images/PCorr.svg", 
@@ -73,6 +73,10 @@ image_vars = {
     "sem_abas_combined_img": "assets/sem/ABAS_Combined.svg",  
     "sem_cbcl_combined_img": "assets/sem/CBCL_Combined.svg",
     "multigroup_plot": "assets/sem/multigroup_plot.html",
+    "sem_3_measures_plot": "assets/sem/sem_3_measures.html",
+    "sem_scq_plot": "assets/sem/sem_scq.html",
+    "sem_abas_plot": "assets/sem/sem_abas.html",
+    "sem_cbcl_plot": "assets/sem/sem_cbcl.html",
 
 
 
@@ -81,7 +85,8 @@ image_vars = {
 }
 
 table_vars = {
-    "par_char_table": "assets/tables/participant_char_table.htm",
+    "par_char_table_full": "assets/tables/participant_char_table.htm",
+    "par_char_table": "assets/tables/participant_char_table.svg",
     "ttest_table": "assets/tables/ttest_table.htm",
     "pcorr_table": "assets/tables/pcorr_table.htm",
     "fit_table": "assets/tables/fit_table.png",

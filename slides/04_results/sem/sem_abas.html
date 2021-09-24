@@ -3,21 +3,23 @@
 
 <section data-background-color="{{white}}">
     <div class="container py-3">
-        {# <h1 class="py-1">SEM SCQ Combined</h1> #}
-        <img class="image-flex" src="{{ sem_abas_combined_img }}" width=98%>
+        <h1 class="py-1">ABAS Model</h1>
+        <iframe class="embed-responsive-item" src="{{sem_abas_plot}}" allowfullscreen width=100% height=370></iframe>
     </div>
 
+     <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Both attention and IQ were preditive of adaptive social and communication skills.",
+            "RSMB, but not IS, was a significant parameter for both the social and communcation subscales.",
+            'Language and age were also predictors adaptive communication.',
+            'Sex was a predictor of social adaptive functioning.',
+        ] %}
+
+        {{ get_ul(points) }}
 
 
-    {# {% set citations = [
-        "citation1",
-        "citation2",
-        "citation3",
-        "citation1",
-        ]
-        %}
-
-    {{get_citations(citations, "model_trimming_citations")}} #}
+    </div>
 
 
 </section>

@@ -3,20 +3,24 @@
 
 <section data-background-color="{{white}}">
     <div class="container py-3">
-        {# <h1 class="py-1">SEM SCQ Combined</h1> #}
-        <img class="image-flex" src="{{ sem_scq_combined_img }}" width=98%>
+        <h1 class="py-1">SCQ Model</h1>
+        <iframe class="embed-responsive-item" src="{{sem_scq_plot}}" allowfullscreen width=100% height=370></iframe>
     </div>
 
+     <div class="container" style="text-align: left;">
 
-    {# {% set citations = [
-        "citation1",
-        "citation2",
-        "citation3",
-        "citation1",
-        ]
-        %}
+        {% set points = [
+            "Unsuprisingly, RRBs and sensory atypicalities
+             were predictive of social and communication symtpoms of ASD.",
+            'Language and age were also predictors of both social and communication subscales.',
+            'Additionally, SES was a predictor of social symptoms,
+             and sex was a predictor of communication symptoms',
+        ] %}
 
-    {{get_citations(citations, "model_trimming_citations")}} #}
+        {{ get_ul(points) }}
+
+
+    </div>
 
 
 </section>

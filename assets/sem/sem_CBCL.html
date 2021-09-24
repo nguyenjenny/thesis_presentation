@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}, "axis": {"labelFontSize": 14, "titleFontSize": 15}, "header": {"labelFontSize": 15, "titleFontSize": 16}, "title": {"fontSize": 16, "subtitleFontSize": 15}}, "data": {"name": "data-901699e7a5910558883d55103004b7c4"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "Color", "scale": null}, "column": {"type": "nominal", "field": "Subscale"}, "opacity": {"condition": {"value": 1, "selection": "selector057"}, "value": 0.2}, "row": {"type": "nominal", "field": "Measure"}, "tooltip": [{"type": "quantitative", "field": "\u03b2"}, {"type": "quantitative", "field": "p-value"}, {"type": "nominal", "field": "Factor"}, {"type": "nominal", "field": "Dependent Variable"}, {"type": "nominal", "field": "Population"}], "x": {"type": "nominal", "field": "Factor"}, "y": {"type": "quantitative", "field": "\u03b2"}}, "height": 180.0, "selection": {"selector057": {"type": "multi", "fields": ["Color"], "bind": "legend"}}, "width": 470.0, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-901699e7a5910558883d55103004b7c4": [{"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#60AD45", "p-value": 4.384236216514736e-06, "\u03b2": -0.19028316239808613, "Population": "Combined", "Factor": "Sensory", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.35614881902409, "\u03b2": -0.03323319562758616, "Population": "Combined", "Factor": "Language", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.5953285906323877, "\u03b2": -0.01883125213007453, "Population": "Combined", "Factor": "RSMB", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#897BB6", "p-value": 0.004331110134597083, "\u03b2": 0.10026161933697059, "Population": "Combined", "Factor": "IS", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#47A5A2", "p-value": 0.0, "\u03b2": 0.3218125321380665, "Population": "Combined", "Factor": "Anxiety", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#FDB715", "p-value": 0.0, "\u03b2": 0.38842742990526813, "Population": "Combined", "Factor": "Attention", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.33585441427938867, "\u03b2": 0.03385347201065781, "Population": "Combined", "Factor": "IQ", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.06321167512926285, "\u03b2": 0.04382408000295848, "Population": "Combined", "Factor": "Age", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.6129993931688742, "\u03b2": 0.012094307190259853, "Population": "Combined", "Factor": "Sex", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.03226797601897369, "\u03b2": -0.060843104612090956, "Population": "Combined", "Factor": "SES", "Dependent Variable": "CBCL Social"}, {"Measure": "3. CBCL", "Subscale": "1. Social", "Color": "#D1D3D4", "p-value": 0.16641805611445326, "\u03b2": -0.03216927963151718, "Population": "Combined", "Factor": "White", "Dependent Variable": "CBCL Social"}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

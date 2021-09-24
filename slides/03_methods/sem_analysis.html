@@ -7,28 +7,22 @@
     <h1 class="py-1">SEM Analysis</h1>
 </div>
 <div class="row g-4 justify-content-md-center">
-    <div class="col-5">
+    <div class="col-3">
         <div class ="container p-3">
-            <h4 class="py-1">Running the Model</h4>
+            <h4 class="py-1">Tools</h4>
             {% set points = [
             "Using <u>semopy</u>, a Python statistical package for SEM, we specified and fit a
              theoretical path model.",
-            "SEM allows us to: 
-            <ul>
-                <li><b>integrate findings</b> from the literature into our model,</li>
-                <li>include <b>latent variables</b> that cannot be empirically measured (i.e., the construct of SES),</li>
-                <li>and <b>account for correlations</b> between factors</li>
-            </ul>
-            .",
+
             ] %}
 
             {{ get_ul(points) }}
         </div>
     </div>
 
-    <div class="col-7">
+    <div class="col-9">
         <div class ="container p-3">
-            <h4 class="py-1">Assessing Model Fit</h4>
+            <h4 class="py-1">Fit Indices</h4>
             {% set points = [
             "We used a <b>confirmatory approach</b>, which involved testing our hypothesized model
              and assessing the fit.",

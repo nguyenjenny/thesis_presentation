@@ -3,21 +3,22 @@
 
 <section data-background-color="{{white}}">
     <div class="container py-3">
-        {# <h1 class="py-1">SEM SCQ Combined</h1> #}
-        <img class="image-flex" src="{{ sem_cbcl_combined_img }}" width=98%>
+        <h1 class="py-1">CBCL Model</h1>
+        <iframe class="embed-responsive-item" src="{{sem_cbcl_plot}}" allowfullscreen width=60% height=370></iframe>
     </div>
 
+     <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Problems in other domains (i.e., attnetion and anxiety), were most predictive of social problems.",
+            "Other factors related to ASD symptomology (i.e., sensory atypicalities and IS) are also predictive.",
+            'NB: Attention, anxiety and social problems are all measured using the CBCL, which may account for the high predictive power.',
+        ] %}
+
+        {{ get_ul(points) }}
 
 
-    {# {% set citations = [
-        "citation1",
-        "citation2",
-        "citation3",
-        "citation1",
-        ]
-        %}
-
-    {{get_citations(citations, "model_trimming_citations")}} #}
+    </div>
 
 
 </section>
