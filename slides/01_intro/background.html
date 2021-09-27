@@ -3,14 +3,16 @@
 
 <section data-background-color="{{purple}}">
     <div class="container py-3">
-        <i class="fa fa-comments display-1 fa-3x pb-3" aria-hidden="true"></i>
+        {# <i class="fa fa-comments display-1 fa-3x pb-3" aria-hidden="true"></i> #}
+        <img src="{{asd_img}}" width=55% />
         <h3>Social communication differences in Autism Spectrum Disorder (ASD)</h3>
     </div>
 
+    
     {% set list_1 = [
         'Social communication differences are a core diagnostic domain of ASD.',
         'These differences can negatively impact academic, mental health, employment, and quality of life outcomes for children and youth with ASD',
-        'There is an emerging body of literature identifying several such factors including demographic factors (sex, race/ethnicity, and socioeconomic status), IQ, sensory processing, attention, language, and repetitive, restrictive behaviours.',
+        'There is an emerging body of literature identifying several such factors that predict social communication.',
 
     
     ] %}
@@ -19,13 +21,13 @@
 
 
     
-    {# {% set citations = [
-    "citation1",
-    "citation2",
-    "citation3",
+    {% set citations = [
+    "Howlin, P. Autism and developmental receptive language disorder - A follow up comparison in early adult life. Social, behavioural, and psychiatric outcomes. J. Neurol. Neurosurg. PSYCHIATRY 72, 826 (2002).",
+    "Hong, J., Bishop-Fitzpatrick, L., Smith, L. E., Greenberg, J. S. & Mailick, M. R. Factors Associated with Subjective Quality of Life of Adults with Autism Spectrum Disorder: Self-Report Versus Maternal Reports. J. Autism Dev. Disord. 46, 1368–1378 (2016).",
+    "Spence, S. H., Donovan, C. & Brechman-Toussaint, M. Social skills, social outcomes, and cognitive features of childhood social phobia. J. Abnorm. Psychol. 108, 211–221 (1999).",
     ]
     %}
 
-    {{get_citations(citations, "background_citations")}} #}
+    {{get_citations(citations, "background_citations")}}
 
 </section>

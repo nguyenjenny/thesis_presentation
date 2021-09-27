@@ -1,0 +1,50 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{sem_color}}" >
+<div class="container">
+    <img class="image-flex" src="{{ sem_img }}" height=100>
+    <h1 class="py-1">SEM Analysis</h1>
+</div>
+{# <div class="row g-4 justify-content-md-center">
+    <div class="col-3">
+        <div class ="container p-3">
+            <h4 class="py-1">Tools</h4>
+            {% set points = [
+            "Using <u>semopy</u>, a Python statistical package for SEM, we specified and fit a
+             theoretical path model.",
+
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+    <div class="col-9">
+        <div class ="container p-3">
+            <h4 class="py-1">Fit Indices</h4>
+            {% set points = [
+            "We used a <b>confirmatory approach</b>, which involved testing our hypothesized model
+             and assessing the fit.",
+            "The following thresholds for indices were used:
+            <ul>
+                <li>Root Mean Square Error of Approximation (RMSEA) < 0.06</li>
+                <li>Comparative Fit Index (CFI) > 0.9</li>
+                <li>Tucker-Lewis index (TLI) > 0.9</li>
+                <li>Normed Fit Index (NFI) > 0.9</li>
+                <li>Chi-squared to degrees of freedom ratio (&chi;<sup>2</sup>/df) < 3</li>
+
+            </ul>
+            "
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+
+
+
+</div> #}
+
+</section>

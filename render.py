@@ -7,7 +7,7 @@ template = jinja_env.get_template("base.html")
 
 general_vars = {
     "presentation_date": "2021-09-29",
-    "presentation_title": "Investigating the determinants of social communication difficulties in ASD",
+    "presentation_title": "Investigating the determinants of social communication differences in neurodevelopmental disoders",
     "subtitle": "Thesis Defense",
     "contact_text": "Contact Me",
     "presentation_width": 1300,
@@ -60,6 +60,8 @@ image_vars = {
     "image_folder": "assets/images/",
 
     # Introduction images
+
+    "asd_img": "assets/images/ASDDomains.svg",
     "cliff_img": "assets/images/GapCliff.svg",
     "path_model_img": "assets/images/PathModel.svg", 
     "twelve_models_img": "assets/images/TwelveSemModels.svg", 
@@ -98,7 +100,7 @@ table_vars = {
     "par_char_table": "assets/tables/participant_char_table.svg",
     "ttest_table": "assets/tables/ttest_table.htm",
     "pcorr_table": "assets/tables/pcorr_table.htm",
-    "fit_table": "assets/tables/fit_table.png",
+    "fit_table": "assets/tables/fit_table.svg",
 
     # "_table": "assets/tables/_table.htm",
 }
