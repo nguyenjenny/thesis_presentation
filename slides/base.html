@@ -80,6 +80,8 @@
 					{% include '00_title_cards/discussion.html' %}
 					{% include '05_discussion/sem.html' %}
 					{% include '05_discussion/implications.html' %}
+					{% include '05_discussion/cumulative.html' %}
+					{% include '05_discussion/support.html' %}
 				</section>
 
 
@@ -94,7 +96,11 @@
 
 				<section>
 					{% include '00_title_cards/conclusion.html' %}
-					{% include '07_conclusion/conclusion.html' %}
+					{# {% include '07_conclusion/conclusion.html' %} #}
+					{% include '07_conclusion/step.html' %}
+					{% include '07_conclusion/personalized.html' %}
+					{% include '07_conclusion/research.html' %}
+					{% include '07_conclusion/construct.html' %}
 				</section>
 
 				<!--  End Page -->
@@ -103,36 +109,31 @@
 				</section>
 
 				<!-- Appendix -->
+
 				<section>
+					{% include '00_title_cards/appendix.html' %}
+				</section>
 
-					<!-- Changes -->
+				<section>
+					<!-- Pairwise Comparisons -->
+					{% include '04_results/pcorr/pcorr_title.html' %}
+					{% include '03_methods/pcorr.html' %} 
+					{% include '04_results/pcorr/ttest_table.html' %}
+					{% include '04_results/pcorr/pcorr_table.html' %} 
+					{% include '05_discussion/pcorr.html' %}
+				</section>
 					
-						{% include '00_title_cards/changes.html' %}
-						{% include '02_changes/model_trimming.html'%}
-						{% include '02_changes/confirmatory_approach.html'%}
-					
+				<section>
+					<!-- Multigroup Anaylsis -->
+					{% include '04_results/multigroup/multigroup_title.html' %}
+					{% include '04_results/multigroup/multigroup.html' %}
+				</section>
 
-					<!-- Methods -->
-					
-						{% include '03_methods/methods_overview.html' %}
-						{% include '03_methods/data_processing_title.html' %}
-						{% include '03_methods/data_processing.html' %}
-						{% include '03_methods/pcorr_title.html' %}
-						{% include '03_methods/pcorr.html' %} 
-				
-
-			
-						{% include '04_results/pcorr/pcorr_title.html' %}
-						{% include '04_results/pcorr/ttest_table.html' %}
-						{% include '04_results/pcorr/pcorr_table.html' %} 
-
-
-						{% include '04_results/multigroup/multigroup_title.html' %}
-						{% include '04_results/multigroup/multigroup.html' %}
-
-						{% include '05_discussion/pcorr.html' %}
-			
-
+				<section>
+					<!-- Changes -->	
+					{% include '00_title_cards/changes.html' %}
+					{% include '02_changes/model_trimming.html'%}
+					{% include '02_changes/confirmatory_approach.html'%}
 				</section>
 
 

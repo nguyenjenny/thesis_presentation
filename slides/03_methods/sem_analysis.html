@@ -48,6 +48,13 @@
         </div>
     </div>
 
+    {% set citations = [
+    "Igolkina, A. A. & Meshcheryakov, G. semopy: A Python Package for Structural Equation Modeling. Struct. Equ. Model. Multidiscip. J. 27, 952–963 (2020).",
+    "Cribbie, R. A. Multiplicity Control in Structural Equation Modeling. Struct. Equ. Model. Multidiscip. J. 14, 98–112 (2007).",
+    ]
+    %}
+
+    {{get_citations(citations, "sem_citations")}}
 
 
 </div>

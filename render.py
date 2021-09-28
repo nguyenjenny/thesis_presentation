@@ -20,7 +20,8 @@ color_vars = {
     "aqua_blue": "#015D8E",
     "baby_blue": "#80DEEA",
     "mustard": "#E58D05",
-    "pink": "#EB9B94",
+    "pink": "#E91E63",
+    "light_pink": "#EB9B94",
     "red": "#FC3E00",
     "tan": "#EDE6D4",
     "peach": "#E5CEAE",
@@ -29,6 +30,7 @@ color_vars = {
     "light_purple": "#B39DDB",
     "green": "#4CAF50",
     "light_green": "#8BC34A",
+    "dark_grey": "#414042",
 
     # Method colours
     "data_processing_color": "#93C8C9",
@@ -88,6 +90,20 @@ image_vars = {
     "sem_scq_plot": "assets/sem/sem_scq.html",
     "sem_abas_plot": "assets/sem/sem_abas.html",
     "sem_cbcl_plot": "assets/sem/sem_cbcl.html",
+
+    # Video
+
+    "rainbow_path": "assets/gifs/RainbowPath.mp4",
+    "support_gif": "https://giphy.com/embed/eiADi71GIXWWc2Z8X8",
+    "path_gif": "https://giphy.com/embed/CUehYc3mmGfUDXO6pH",
+    "stair_gif": "https://giphy.com/embed/lrA5TYCRUjVUFDbJFz",
+    "microscope_gif": "https://giphy.com/embed/jSO9vpciheZYmiormq",
+    "measure_gif": "https://giphy.com/embed/fo4Wm6nsWAUbdaAIfD",
+    "faces_gif": "https://giphy.com/embed/LRncOtkTDSjqeJEWmQ",
+
+
+   
+
 
 
 

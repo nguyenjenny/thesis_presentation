@@ -1,0 +1,33 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{light_pink}}" >
+
+
+<div class="container-lg-12">
+        <div class="row g-2 my-auto">
+            <div class="col-4">
+                <div class='container-flex h-100'>
+                    <iframe src="{{support_gif}}" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div>
+            </div>
+            <div class="col-8 my-auto">
+                <div class="container">
+                    <h1>Identification of supports</h1>
+                    {% set points = [
+                        'Our results can ultimately lead to the <b>identification of areas where environmental and social supports</b> can be implemented to increase the participation and inclusion of children with ASD. For example:
+                        <ul>
+                            <li>For individuals where sensory differences impact social communication, identification and supporting sensory triggers may be helpful.</li>
+                            <li>In individuals where language ability impacts social communication skills, speech and language supports may be used. </li>
+                        </ul>
+                        ',
+                    ] %}
+
+                    {{ get_ul(points) }}
+                   
+                </div>
+            </div>
+        </div>
+</div>
+
+</section>
