@@ -62,15 +62,12 @@
 					{% include '04_results/par_char_table.html' %}
 
 					
-
 					{% include '04_results/sem/sem_title.html' %}
 					{% include '04_results/sem/sem_fit.html' %}
 					{% include '04_results/sem/sem_scq.html' %}
 					{% include '04_results/sem/sem_abas.html' %}
 					{% include '04_results/sem/sem_cbcl.html' %}
 					{% include '04_results/sem/sem_combined.html' %}
-
-					
 
 
 				</section>
@@ -116,16 +113,32 @@
 
 				<section>
 					<!-- Pairwise Comparisons -->
-					{% include '04_results/pcorr/pcorr_title.html' %}
-					{% include '03_methods/pcorr.html' %} 
-					{% include '04_results/pcorr/ttest_table.html' %}
-					{% include '04_results/pcorr/pcorr_table.html' %} 
-					{% include '05_discussion/pcorr.html' %}
+					{% include '08_pairwise/pcorr_title.html' %}
+					{% include '08_pairwise/pcorr_methods.html' %} 
+					{% include '08_pairwise/ttest_table.html' %}
+					{% include '08_pairwise/pcorr_table.html' %} 
+					{% include '08_pairwise/pcorr_discussion.html' %}
+				</section>
+
+
+				<section>
+					<!-- Sample -->
+					{% include '00_title_cards/sample.html' %}
+					{% include '09_sample/par_char_table.html' %}
+					{% include '09_sample/sex_race.html' %}
+					{% include '09_sample/factor_dist.html' %}
+					{% include '09_sample/sc_dist.html' %}
+					{% include '09_sample/scq_soc_dist.html' %}
+					{% include '09_sample/scq_com_dist.html' %}
+					{% include '09_sample/abas_soc_dist.html' %}
+					{% include '09_sample/abas_com_dist.html' %}
+					{% include '09_sample/cbcl_soc_dist.html' %}
 				</section>
 					
 				<section>
 					<!-- Multigroup Anaylsis -->
 					{% include '04_results/multigroup/multigroup_title.html' %}
+					{% include '01_intro/12_sem_models.html'%}
 					{% include '04_results/multigroup/multigroup.html' %}
 				</section>
 

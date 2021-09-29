@@ -1,0 +1,23 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{white}}">
+    <div class="container py-3">
+        <h1 class="py-1">Overlap Among Diagnostic Groups by Model Factors</h1>
+        <img class="image-flex" src="{{ factor_dist_plt }}" width=90%>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Overlap between the ASD and ADHD groups also exists when looking at factors, particularly for anxiety, attention differences and sensory differences.",
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+
+</section>

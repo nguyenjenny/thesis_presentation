@@ -1,0 +1,25 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{white}}">
+    <div class="container py-3">
+        <h1 class="py-1">Sex and White Race by Diagnostic Groups</h1>
+        <img class="image-flex" src="{{ sex_race_plt }}" width=90%>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "In the ASD and ADHD groups, males signifanctly outnumber females.",
+            'There were more participants that identified as white vs non-white across all three groups. However, many participants chose not to specify a race.',
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+
+
+</section>

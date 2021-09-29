@@ -2,33 +2,42 @@
 {% from 'macros/citation_macro.html' import get_citations %}
 
 <section data-background-color="{{light_purple}}">
-    <div class="container py-3">
-        <img src="{{pond_img}}" width=100 />
-        <h1>Participants</h1>
+    
+
+
+    <div class="container-lg-12">
+        <div class="row g-2">
+            <div class="col-9 my-auto">
+                <div class="container py-3">
+                    <img src="{{pond_img}}" width=100 />
+                    <h1>Participants</h1>
+                </div>
+                <div class="container" style="text-align: left;">
+                    {% set points = [
+                        'We included participants from the <b>Province of Ontario Neurodevelopmental Disorders (POND) network</b>,
+                        a multi-centre research network that studies neurodevelopmental disorders.',
+                        "Our total sample population included 2551 children and youth with diagnoses of <b>ASD (n=1194)</b>, and <b>ADHD (n=1065)</b>.
+                        We also included <b>typically developing TD (n=292)</b> individuals as a comparison group.
+                        ",
+                                            
+                    ] %}
+
+                    {{ get_ul(points) }}
+                </div>
+            </div>
+            <div class="col-3 my-auto">
+                <div class='container-flex h-100'>
+                    <img class="image-flex" src="{{sex_dx_plot}}" width=300>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="container" style="text-align: left;">
-    {# <p>We included participants from the <b>Province of Ontario Neurodevelopmental Disorders (POND) network</b>, a multi-centre research network that studies neurodevelopmental disorders.
-     Participants across Ontario are recruited to one of five sites: The Hospital for Sick Children (Toronto), Holland Bloorview Kids Rehabilitation Hospital (Toronto), Western University (London), McMaster University (Hamilton) and Queen's University (Kingston).
-     Our sample population includes children and youth with diagnoses of <b>autism spectrum disorder (ASD)</b>, and <b>attention-deficit/hyperactivity disorder (ADHD)</b>.
-     We will also include <b>typically developing (TD)</b>  individuals as a comparison group.
-     </p> #}
 
-    {% set points = [
-        'We included participants from the <b>Province of Ontario Neurodevelopmental Disorders (POND) network</b>,
-         a multi-centre research network that studies neurodevelopmental disorders.',
-        "Our total sample population included 2551 children and youth with diagnoses of <b>autism spectrum disorder (ASD, n=1194)</b>, and <b>attention-deficit/hyperactivity disorder (ADHD, n=1065)</b>.
-         We also included <b>typically developing (TD, n=292)</b> individuals as a comparison group.
-        ",
-                               
-    ] %}
-
-    {{ get_ul(points) }}
+    
 
         
         
-
-    </div>
 
 
 </section>

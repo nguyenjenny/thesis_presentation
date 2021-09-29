@@ -1,0 +1,25 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{white}}">
+    <div class="container py-3">
+        <h1 class="py-1">Social Communication among Diagnostic Groups</h1>
+        <img class="image-flex" src="{{ sc_dist_plt }}" width=90%>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Overlap between the ASD and ADHD groups is apparent",
+            'Similarity between ASD and ADHD group is espeically pronounced in the CBCL social problems.',
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+
+
+</section>

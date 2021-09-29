@@ -71,6 +71,7 @@ image_vars = {
 
     # Method images
     "pond_img": "assets/images/logos/logo_POND.png",
+    "sex_dx_plot": "assets/images/SexDx.svg",
     "measures_img": "assets/images/Measures.svg",
     "methods_img": "assets/images/Methods-03.svg", 
     "data_cleaning_img": "assets/images/DataCleaning.svg", 
@@ -85,14 +86,24 @@ image_vars = {
     "sem_scq_combined_img": "assets/sem/SCQ_Combined.svg",
     "sem_abas_combined_img": "assets/sem/ABAS_Combined.svg",  
     "sem_cbcl_combined_img": "assets/sem/CBCL_Combined.svg",
-    "multigroup_plot": "assets/sem/multigroup_plot.html",
+    "multigroup_plot": "assets/sem/sem_multigroup.html",
     "sem_3_measures_plot": "assets/sem/sem_3_measures.html",
     "sem_scq_plot": "assets/sem/sem_scq.html",
     "sem_abas_plot": "assets/sem/sem_abas.html",
     "sem_cbcl_plot": "assets/sem/sem_cbcl.html",
 
-    # Video
 
+    # Distribution Plots
+    "sex_race_plt": "assets/plots/sex_race.svg", 
+    "sc_dist_plt": "assets/plots/sc_dist.svg", 
+    "factor_dist_plt": "assets/plots/factor_dist.svg", 
+    "scq_soc_dist_plt": "assets/plots/scq_soc_dist.svg", 
+    "scq_com_dist_plt": "assets/plots/scq_com_dist.svg", 
+    "abas_soc_dist_plt": "assets/plots/abas_soc_dist.svg", 
+    "abas_com_dist_plt": "assets/plots/abas_com_dist.svg", 
+    "cbcl_soc_dist_plt": "assets/plots/cbcl_soc_dist.svg", 
+
+    # gifs
     "rainbow_path": "assets/gifs/RainbowPath.mp4",
     "support_gif": "https://giphy.com/embed/eiADi71GIXWWc2Z8X8",
     "path_gif": "https://giphy.com/embed/CUehYc3mmGfUDXO6pH",
@@ -112,10 +123,10 @@ image_vars = {
 }
 
 table_vars = {
-    "par_char_table_full": "assets/tables/participant_char_table.htm",
+    "par_char_table_full": "assets/tables/full_participant_char_table.svg",
     "par_char_table": "assets/tables/participant_char_table.svg",
-    "ttest_table": "assets/tables/ttest_table.htm",
-    "pcorr_table": "assets/tables/pcorr_table.htm",
+    "ttest_table": "assets/tables/ttest_table.svg",
+    "pcorr_table": "assets/tables/corr_table.svg",
     "fit_table": "assets/tables/fit_table.svg",
 
     # "_table": "assets/tables/_table.htm",

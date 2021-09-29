@@ -1,0 +1,24 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{white}}">
+    <div class="container py-3">
+        <h1 class="py-1">Intercorrelations among factors & social communication</h1>
+        <img class="image-flex" src="{{ pcorr_table }}" width=85%>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Confirms the correlations between factors and social communication in the literature.",
+            "Intercorrelations among factors are also notable.",
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+
+</section>

@@ -1,0 +1,24 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{white}}">
+    <div class="container py-3">
+        <h1 class="py-1">Pairwise Comparison of Sex & White Race</h1>
+        <img class="image-flex" src="{{ ttest_table }}" width=85%>
+    </div>
+
+    <div class="container" style="text-align: left;">
+
+        {% set points = [
+            "Male sex was associated with greater social communication differences on the SCQ and ABAS, but not the CBCL.",
+            "White race was not associated with social communication differences across all three measures.",
+        ] %}
+
+        {{ get_ul(points) }}
+
+        
+
+    </div>
+
+
+</section>

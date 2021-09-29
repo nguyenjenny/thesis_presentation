@@ -1,0 +1,42 @@
+{% from 'macros/list_macro.html' import get_ol, get_ul %}
+{% from 'macros/citation_macro.html' import get_citations %}
+
+<section data-background-color="{{pcorr_color}}" >
+
+<div class="row g-4 justify-content-md-center">
+    <h4>We individually tested the pairwise associations between each factor with the measures of social communication to see if the correlations were <b>consistent with the literature</b>.</h4>
+    <div class="col-6">
+        <div class ="container p-3">
+            <img class="image-flex" src="{{ pcorr_img }}" height=100>
+            <h4 class="py-1">Pearson Correlation</h4>
+
+
+            {% set points = [
+            "For continuous variables, the pairwise associations among factors as well as measures of social communication
+             were examined using <b>Pearson's correlations</b> and corrected for multiple comparisons using the <b>Bonferroni</b> method.",
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+
+    <div class="col-6">
+        <div class ="container p-3">
+            <img class="image-flex" src="{{ ttest_img }}" height=100>
+            <h4 class="py-1">Unpaired T-test</h4>
+            {% set points = [
+            "For binary factors (i.e, male sex and white ethnicity),
+             <b>unpaired t-tests</b>  along with <b> Bonferroni</b>  correction were used to quantify each factor's impact on the measures of social communication.",
+            
+            ] %}
+
+            {{ get_ul(points) }}
+        </div>
+    </div>
+
+
+
+</div>
+
+</section>
